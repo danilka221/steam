@@ -7,6 +7,8 @@ $router->add('', ['controller' => 'HomeController', 'action' => 'index']);
 
 /*=== АВТОРИЗАЦИЯ, РЕГИСТРАЦИЯ, ВЫХОД ИЗ АККАУНТА ===*/
 $router->add('auth', ['controller' => 'LoginController', 'action' => 'auth']);
+$router->add('register', ['controller' => 'RegisterController', 'action' => 'show']);
+$router->add('register/store', ['controller' => 'RegisterController', 'action' => 'store']);
 $router->add('logout', ['controller' => 'LoginController', 'action' => 'logout']);
 $router->add('get_auth', ['controller' => 'LoginController', 'action' => 'getAuthId']);
 
