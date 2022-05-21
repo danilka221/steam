@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Model\UserModel;
 use App\Model\UserRoleModel;
+use Core\View;
 
 class LoginController {
     /**
@@ -99,6 +100,11 @@ class LoginController {
         }
 
         return $auth_data;
+    }
+
+    public function forgotPassword()
+    {
+        View::render('account');
     }
 
     /**

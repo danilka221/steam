@@ -13,6 +13,7 @@
                 <th>Телефон</th>
                 <th>Роль</th>
                 <th>Уровень</th>
+                <th>Сменить пароль</th>
                 <th></th>
             </tr>
             </thead>
@@ -23,6 +24,9 @@
                     <td><?=$item->phone?></td>
                     <td><?=$item->name_role?></td>
                     <td><?=$item->level?></td>
+                    <td><a href="/users/edit_password?id=<?=$item->user_id?>">
+                                <ion-icon name="pencil-outline"></ion-icon>
+                            </a></td>
                     <td>
                         <a href="/roles/role?id=<?=$item->table_id?>">
                             <ion-icon name="eye-outline"></ion-icon>
